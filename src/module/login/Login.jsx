@@ -86,7 +86,7 @@ const Login = () => {
                     type="text"
                     margin="dense"
                     id="loginId_input"
-                    placeholder="NAME.SURNAME"
+                    placeholder="User Code"
                     // value={username}
                     // onKeyDown={handleKeyDown}
                     // onChange={(e) => setUsername(e.target.value)}
@@ -110,7 +110,7 @@ const Login = () => {
                   </Box>
                   <TextField
                     id="password_input"
-                    placeholder="PASSWORD"
+                    placeholder="Password"
                     margin="dense"
                     // onKeyDown={handleKeyDown}
                     type={showPassword ? "text" : "password"}
