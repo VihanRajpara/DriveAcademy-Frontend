@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const StartingPage = () => {
   const navigate = useNavigate();
   const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [isInstallable, setIsInstallable] = useState(false);
+  const [isInstallable, setIsInstallable] = useState(true);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
