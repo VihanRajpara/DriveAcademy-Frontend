@@ -17,7 +17,7 @@ const Login = () => {
   const { updateRefresh } = useContext(UserContext);
 
   const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [isInstallable, setIsInstallable] = useState(true);
+  const [isInstallable, setIsInstallable] = useState(false);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
@@ -39,7 +39,6 @@ const Login = () => {
       const choiceResult = await deferredPrompt.userChoice;
       if (choiceResult.outcome === "accepted") {
         console.log("User accepted the install prompt");
-        setIsInstallable(false);
       } else {
         console.log("User dismissed the install prompt");
       }
